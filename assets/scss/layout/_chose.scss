@@ -326,6 +326,9 @@
         text-align: center;
         display: inline-block;
         line-height: 60px;
+        svg path {
+          fill: var(--tg-theme-primary) !important;
+        }
       }
       & p {
         line-height: 28px;
