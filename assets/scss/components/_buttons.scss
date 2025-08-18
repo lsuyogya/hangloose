@@ -21,7 +21,12 @@
     background: var(--tg-common-black);
   }
   &-transparent {
-    background: #f0e9ff;
+    // background: #f0e9ff;
+    background: color-mix(
+      in srgb,
+      map-get(map-get($colors, "theme"), "primary") 10%,
+      white 90%
+    );
     color: var(--tg-theme-primary);
     &:hover {
       color: var(--tg-common-white);
